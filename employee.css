@@ -1,0 +1,43 @@
+.employee-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #646464, #484848,#646464);
+    padding: 10px;
+    max-width: 45%;
+    width: 100%;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    justify-self: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.table th{
+    padding: 5px;
+    min-width: 450px;
+    text-align: left;
+}
+
+.table td{
+    padding: 5px;
+    min-width: 50px;
+    text-align: right;
+}
+
+.table tr{
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.table tr:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

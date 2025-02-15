@@ -1,21 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="panal.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h2>Welcome, Admin!</h2>
-    </header>
     
     <div class="dashboard">
         <!-- Sidebar -->
         <nav class="navbar">
+            <h3>Admin Panel</h3>
             <ul>
-                <li><a href="#dashboard" class="navlink">Dashboard</a></li>
+                <li><a href="#main" class="navlink">Dashboard</a></li>
                 <li><a href="#employees" class="navlink">Manage Employees</a></li>
                 <li><a href="#reports" class="navlink">View Reports</a></li>
             </ul>
@@ -23,28 +23,97 @@
         </nav>
 
         <div class="admin-container">
+            <div class="Welcome">
+                <h1>👋 Welcome Back, Admin!</h1>
+                <p>Heres your work panel</p>
+            </div>
             <!-- Main Content -->   
-                <div class="content">
-                    <section id="dashboard">
-                        <h2>Dashboard Overview</h2>
-                        <p>Here you can see a summary of reports and activities.</p>
-                    </section>
-                    <section id="employees">
+            <div class="content">   
+                <!-- Dashboard Section -->
+                <section id="main">
+                    <h3>Dashboard Overview</h3>
+                    
+                    <div class="dashboard-summary">
+                        <div class="summary-card">
+                            <h3>Total Employees</h3>
+                            <p id="totalEmployees">50</p>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Ongoing Projects</h3>
+                            <p id="ongoingProjects">10</p>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Reports</h3>
+                            <p>05</p>
+                        </div>
+                    </div>
+                    <div class="charts">
+                        <div class="chart">
+                            <h3>Monthly Progress</h3>
+                            <canvas id="progressChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Employees Section -->
+                <section id="employees">
+                    <div class="ManageEmp">
                         <h2>Manage Employees</h2>
-                        <button class="btn">Add Employee</button>
                         <button class="btn">View Employees</button>
-                    </section>
-                    <section id="reports">
-                        <h2>View Reports</h2>
-                        <p>Generate and view detailed reports here.</p>
-                    </section>
-                </div>
+                    </div>
+                    
+                    <!-- Employee Form -->
+                    <div class="employee-form">
+                        <h3>Add New Employee</h3>
+                        <form id="addEmployeeForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+
+                            <label for="position">Position:</label>
+                            <input type="text" id="position" required>
+
+                            <button type="submit" class="btn">Add Employee</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Reports Section -->
+                <section id="reports">
+                    <h2>View Reports</h2>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="border: 1px solid #ddd; padding: 8px;">Report ID</th>
+                                <th style="border: 1px solid #ddd; padding: 8px;">Report Title</th>
+                                <th style="border: 1px solid #ddd; padding: 8px;">Date Generated</th>
+                                <th style="border: 1px solid #ddd; padding: 8px;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border: 1px solid #ddd; padding: 8px;">1</td>
+                                <td style="border: 1px solid #ddd; padding: 8px;">Monthly Performance</td>
+                                <td style="border: 1px solid #ddd; padding: 8px;">2025-01-01</td>
+                                <td style="border: 1px solid #ddd; padding: 8px;">Completed</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #ddd; padding: 8px;">2</td>
+                                <td style="border: 1px solid #ddd; padding: 8px;">Quarterly Revenue</td>
+                                <td style="border: 1px solid #ddd; padding: 8px;">2025-01-05</td>
+                                <td style="border: 1px solid #ddd; padding: 8px;">Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
         </div>
     </div>
 
-        
-    <script src="admin.js">
-    
-    </script>
+    <script src="admin.js"></script>
+    <script src="panel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
