@@ -1,0 +1,43 @@
+.manager-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-left: 270px;
+    padding: 20px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.thead, .tbody{
+    border: 1px solid #fff;
+    text-align: center;
+    width: 250px;
+    padding: 5px;
+}
+
+.Man-datails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.editbtn{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d,#1e1e1e);
+    padding: 10px;
+    border-radius: 15px; border: none;
+    align-items: center;
+    width: 100%;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
+}
+
+.editbtn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}

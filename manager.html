@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="manager.css">
+    <link rel="stylesheet" href="panal.css">
+</head>
+<body>
+    
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="navbar">
+            <h3>Manager Panel</h3>
+            <ul>
+                <li><a href="#main" class="navlink">Tasks</a></li>
+                <li><a href="#employees" class="navlink">Employee profiles</a></li>
+                <li><a href="#profile" class="navlink">Profile</a></li>
+            </ul>
+            <button class="logoutbtn">Logout</button>
+        </nav>
+
+        <div class="manager-container">
+            <div class="Welcome">
+                <h1>👋 Welcome Back, Manager!</h1>
+                <p>Here's your work panel</p>
+            </div>
+
+            <div class="content">   
+                <!-- Tasks Section -->
+                <section id="main">
+                    <h3>Tasks</h3>
+                    
+                    <div class="tasks">
+                        <div class="card">
+                            <h3>Ongoing Tasks</h3>
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <th class="thead">Task ID</th>
+                                    <th class="thead">Task</th>
+                                    <th class="thead">Due date</th>
+                                    <th class="thead">Remaining</th>
+                                </tr>
+                                <tr>
+                                    <td class="tbody">T001</td>
+                                    <td class="tbody">P010 project plan meeting</td>
+                                    <td class="tbody">21th Feb 2025</td>
+                                    <td class="tbody">2 days</td>
+                                </tr>
+                                <tr>
+                                    <td class="tbody">T005</td>
+                                    <td class="tbody">Assign task to P008 project</td>
+                                    <td class="tbody">5th March 2025</td>
+                                    <td class="tbody">14 days</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card">
+                            <h3>Completed Tasks</h3>
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <th class="thead">Task ID</th>
+                                    <th class="thead">Task</th>
+                                    <th class="thead">Due date</th>
+                                    <th class="thead">Status</th>
+                                </tr>
+                                <tr>
+                                    <td class="tbody">T002</td>
+                                    <td class="tbody">Mobile app project plan meeting</td>
+                                    <td class="tbody">18th Feb 2025</td>
+                                    <td class="tbody">Done</td>
+                                </tr>
+                                <tr>
+                                    <td class="tbody">T003</td>
+                                    <td class="tbody">Final Meeting of Project no: P007</td>
+                                    <td class="tbody">20th Feb 2025</td>
+                                    <td class="tbody">Posponed</td>
+                                </tr>
+                                <tr>
+                                    <td class="tbody">T005</td>
+                                    <td class="tbody">Check Progress P006</td>
+                                    <td class="tbody">07th Feb 2025</td>
+                                    <td class="tbody">Done</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="employees">
+                    <h3>Employee Profiles</h3>
+                    <div class="card">
+                        <p>EID: E001</p>
+                        <p>Employee: Sarath Kumara</p>
+                    </div>
+                    <div class="card">
+                        <p>EID: E002</p>
+                        <p>Employee: Amal Perera</p>
+                    </div>
+                    <div class="card">
+                        <p>EID: E004</p>
+                        <p>Employee: Ravi Siriwardhana</p>
+                    </div>
+                    <div class="card">
+                        <p>EID: E005</p>
+                        <p>Employee: Rnjith De Soysa</p>
+                    </div>
+                    <div class="card">
+                        <p>EID: E006</p>
+                        <p>Employee: Janaki Kumari</p>
+                    </div>
+                    <div class="card">
+                        <p>EID: E007</p>
+                        <p>Employee: Manushi Nagahawatta</p>
+                    </div>
+                    <div class="card">
+                        <p>EID: E009</p>
+                        <p>Employee: Kalana Perera</p>
+                    </div>
+                </section>
+
+                <section id="profile" >
+                    <h3>Profile</h3>
+                    <div class="card" style="text-align: center;">
+                        <p>Name: Mr. Ajith P. Fonseca</p>
+                        <p>Posission: Project Manager</p>
+                    </div>
+                    <div class="Man-datails">
+                        <div class="card" style="width: 45%;">
+                            <p><strong>Department:</strong> IT Development</p>
+                            <p><strong>Employee ID:</strong> E12345</p>
+                            <p><strong>Email:</strong> ajithfonseka@example.com</p>
+                        </div>
+                        <div class="card" style="width: 45%;">    
+                            <p><strong>Contact Number:</strong> +9471 234 5678</p>
+                            <p><strong>Address:</strong> 123 Main Street, Colombo, Sri Lanka</p>
+                            <p><strong>Joining Date:</strong> January 15, 2022</p>
+                        </div>
+                    </div>
+                    <button class="editbtn">Edit Profile</button>
+                </section>
+        </div>
+    </div>
+
+    
+    <script src="panel.js"></script>
+    
+</body>
+</html>

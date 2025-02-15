@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #1e1e1e;
+    max-width: 250px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 0px 0px 20px;
+    text-align: center;
+}
+.navbar h3{
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar ul li {
+    margin: 20px 0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px 0px 0px 10px;
+    height: 20px;
+    display: block;
+    background-color: #c7cccf;
+    transition: background-color 0.3s, font-size 0.5s;
+}
+
+.navlink:hover, .logoutbtn:hover {
+    background-color: #e9ecef;
+    font-size: larger; 
+    color: #1e1e1e;    
+}
+
+.navlink.active {
+    background-color: #e9ecef;
+    color: #1e1e1e;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.logoutbtn {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 200px;
+    color: #1e1e1e;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    background-color: #c7cccf;
+    cursor: pointer;
+}
+
+.Welcome{
+    background: #2d2d2d;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #646464, #484848,#646464);
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 1px;
+    font-weight: 500;
+}
