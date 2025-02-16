@@ -1,4 +1,3 @@
-// Handle Tab Switching
     document.querySelectorAll(".tab").forEach((tab) => {
         tab.addEventListener("click", function () {
             // Remove "active" class from all tabs
@@ -15,12 +14,9 @@
 
     // Handle Login Form Submission
     function handleLogin(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault();
 
-        // Get the selected role
         const role = document.getElementById("selectedRole").value;
-
-        // Redirect to the appropriate page
         if (role === "admin") {
             window.location.href = "admin.html";
         } else if (role === "manager") {

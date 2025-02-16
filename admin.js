@@ -1,3 +1,4 @@
+ //chart section
  const progressCtx = document.getElementById('progressChart').getContext('2d');
     const progressChart = new Chart(progressCtx, {
         type: 'line',
@@ -15,3 +16,4 @@
             maintainAspectRatio: false,
         },
     });
+
